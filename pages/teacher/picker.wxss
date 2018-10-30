@@ -1,0 +1,4 @@
+/* pages/teacher/picker.wxss */
+.title{
+  height: 50px;
+}

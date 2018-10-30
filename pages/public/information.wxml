@@ -1,0 +1,18 @@
+<view class="section">
+  <view class="top">
+    <view class="background"></view>
+    <view>
+      <image class="head" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+  </view>
+</view>
+<view class="section">
+  <view class="bottom">
+
+    <button class="item" bindtap='btn'>我的首页</button>
+    <button class="item" bindtap='Btn'>返回主页</button>
+
+  </view>
+</view>
+
+

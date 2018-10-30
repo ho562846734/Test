@@ -1,0 +1,4 @@
+/* pages/parent/login.wxss */
+.title{
+  height: 50px;
+}

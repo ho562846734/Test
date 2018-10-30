@@ -1,0 +1,47 @@
+<view class="section title">
+  <view style='text-align:center'>欢迎使用家长登录系统</view>
+</view>
+
+<view class="section">
+  <view>您的小孩是？</view>
+</view>
+
+<view class="section">
+
+
+  <view>
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+      <button type="default">请选择您的小朋友</button>
+    </picker>
+  </view>
+
+
+</view>
+
+<view class="section">
+  <view>您是{{array1[index1]}}的？</view>
+</view>
+
+<view class="section">
+
+
+  <view>
+    <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+      <button type="default">请选择您和小朋友的关系</button>
+    </picker>
+  </view>
+
+
+</view>
+
+
+<view class="section">
+  <view>请再次确认您的关系:</view>
+  <view>您是{{array1[index1]}}{{array2[index2]}}</view>
+  <view class="weui-cell__ft">
+    <view class='weui-btn-area'>
+      <button type="primary"  bindtap="login">登录</button>
+      <button type="default"  bindtap="resetChildren">重设</button>
+    </view>
+  </view>
+</view>

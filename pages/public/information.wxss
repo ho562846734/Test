@@ -1,0 +1,34 @@
+.top{
+  height: 250px;
+}
+
+.background{
+  height: 200px;
+  background-color: #f6fad0;
+}
+
+.head{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  position: relative;
+  bottom:75rpx;
+  left: 100rpx;
+  background-color: #e1f5de;
+}
+
+.bottom{
+  background-color: #eec8dd;
+}
+
+.item{
+  margin-top: 1px;
+  border: 1px solid black;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}

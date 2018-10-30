@@ -1,0 +1,47 @@
+<view class="section title">
+  <view style='text-align:center'>欢迎使用教师登录系统</view>
+</view>
+
+<view class="section">
+  <view>您所在的年级是？</view>
+</view>
+
+<view class="section">
+
+
+  <view>
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+      <button type="default">请选择您所教的年级</button>
+    </picker>
+  </view>
+
+
+</view>
+
+<view class="section">
+  <view>您是几班的班主任？</view>
+</view>
+
+<view class="section">
+
+
+  <view>
+    <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+      <button type="default">请选择您所在的班级</button>
+    </picker>
+  </view>
+
+
+</view>
+
+
+<view class="section">
+  <view>请再次确认您的信息:</view>
+  <view style='border:1px solid black'>您教的班级是{{array1[index1]}}{{array2[index2]}}</view>
+  <view class="weui-cell__ft">
+    <view class='weui-btn-area' style='margin-top:20px'>
+      <button type="primary"  bindtap="login">进入</button>
+      <button type="default"  bindtap="resetChildren">重设</button>
+    </view>
+  </view>
+</view>

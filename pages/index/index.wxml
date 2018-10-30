@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" style='font-size:50px;color:#4682b4'>{{motto}}</text>
+  </view>
+  <view class="index-block">
+    <view bindtap="clickTeacher" class="index-item">
+      <view class="indexflex">
+       <image class="index-item-img" src="../images/t.png"/>
+        <view class="index-item-name"> 我是老师</view>
+      </view>
+    </view>
+    <view bindtap="clickParent" class="index-item">
+      <view class="indexflex">
+      <image class="index-item-img" src="../images/parent.png"/>
+        <view class="index-item-name"> 我是家长</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+

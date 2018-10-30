@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/teacher/picker",
+    "pages/teacher/login",
+    "pages/teacher/index",
+    "pages/public/information",
+    "pages/public/new_announcement",
+    "pages/parent/login",
+    "pages/public/index",
+    "pages/logs/logs",
+    "pages/test/index",
+    "pages/test/second"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4682b4",
+    "navigationBarTitleText": "派作业",
+    "navigationBarTextStyle": "white"
+  }
+}

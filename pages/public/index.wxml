@@ -1,0 +1,83 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}} top" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view>{{child}}{{relationship}}您好,这是您的未读信息</view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+
+
+
+          <view class="section">
+            <view class="item2">
+
+              <view>测试公告</view>
+              <view>测试时间</view>
+
+
+            </view>
+            <view class="text">
+              <view>测试内容</view>
+            </view>
+          </view>
+
+          <view class="section">
+            <view class="item2">
+
+              <view>测试公告</view>
+              <view>测试时间</view>
+
+
+            </view>
+            <view class="text">
+              <view>测试内容</view>
+            </view>
+          </view>
+
+          <view class="section">
+            <view class="item2">
+
+              <view>测试公告</view>
+              <view>测试时间</view>
+
+
+            </view>
+            <view class="text">
+              <view>测试内容</view>
+            </view>
+          </view>
+
+          <view class="section">
+            <view class="item2">
+
+              <view>测试公告</view>
+              <view>测试时间</view>
+
+
+            </view>
+            <view class="text">
+              <view>测试内容</view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">作业的内容</view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">打卡的内容</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+
+    <view>
+      <image class="tabbar" src="../images/user.png" mode="cover" bindtap='information'></image>
+    </view>
+
+  </view>
+</view>

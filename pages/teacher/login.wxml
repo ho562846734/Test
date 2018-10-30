@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="page__hd content">
+    <view class="title">{{gradeno}}{{classno}}班主任您好</view>
+  </view>
+  <view class="page__bd middle">
+
+
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="weui-cells weui-cells_after-title password">
+        <view class="weui-cell weui-cell_input">
+          <view>
+            <input class="weui-input" style='bottom:0px' placeholder="请输入暗号" name="password" password maxlength="8" type='number' />
+          </view>
+        </view>
+      </view>
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" formType="submit" >确定</button>
+      </view>
+
+      <button class="confirmBtn" formType="reset" type='default'>重设</button>
+
+    </form>
+  </view>
+</view>

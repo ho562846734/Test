@@ -1,0 +1,37 @@
+<view class="section">
+  <view class="title">
+    <view>新建公告</view>
+  </view>
+</view>
+
+<view class="section">
+  <textarea class="announcement" placeholder="请输入公告内容">
+
+
+  </textarea>
+
+</view>
+
+
+<view class="section">
+<view class="imageinput">
+  <image class="image" src="{{image}}"></image>
+  <view>（只能添加一张图片）</view>
+</view>
+
+</view>
+
+<view class="section">
+  
+
+  <button bindtap='addimage'>请添加图片</button>
+
+</view>
+
+<view class="section">
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" style='margin-top:10px' type="primary" formType="submit" bindtap='btnClick'>确定</button>
+  </view>
+
+</view>
